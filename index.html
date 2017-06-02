@@ -1,0 +1,735 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Cuidemos el Planeta</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema-app10.min.css"/>
+  <link rel="stylesheet"  href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet"  href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+  <script type="text/javascript">
+  
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+  
+  <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine3/style.css" />
+<script type="text/javascript" src="engine3/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</head>
+
+ <body onLoad="MM_preloadImages('imagenes/tirra.jpg','imagenes/cambio climatico2.jpg','imagenes/tipo de contaminacion2.jpg','imagenes/luminosa.jpg','imagenes/conciencia ecologica4.jpg','imagenes/energia luminosa.jpg','imagenes/energia solar.jpg','imagenes/contaminacion quimica2.jpg','imagenes/energia2.jpg','imagenes/energia electrica2.jpg','imagenes/energia luminosa2.jpg','imagenes/energia mecanica2.jpg','imagenes/energia termica2.jpg','imagenes/energia eolica2.jpg')">
+ 
+ 
+ <div data-role="page" id="Principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-black-btn-txt="Regresar" data-back-btn-theme="b">
+     <h1>Cuidemos el Planeta</h1>
+    </div>
+    
+   <div align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('tierra','','imagenes/tirra.jpg',1)" > <img src="imagenes/tiera.jpg" width="458" height="332" id="tierra" ></a></div>
+<div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> Dia internacional de la tierra</h2>
+        <p>Muestra informacion sobre el tema</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Día Internacional de la Biodiversidad </h2>
+         <p>Muestra informacion sobre el tema</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Conciencia ecológica</h2>
+         <p>Muestra informacion sobre el tema</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Contaminacion</h2>
+         <p>Muestra informacion sobre el Tema</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Cambio climatico</h2>
+         <p>Muestra informacion sobre el tema</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Energias</h2>
+         <p>Muestra informacion sobre el tema</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Calentamiento grobal</h2>
+         <p>Muestra informacion sobre el tema</p>
+       </a>
+     </li>
+    <li class="ui-first-child ui-last-child">
+       <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Elaborado por</h2>
+         <p>Muestra informacion sobre el creador</p>
+       </a>
+     </li>
+    </ul>
+   </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Cuidemos el planeta</h4>
+       <h4>Josue Santiago Muñoz Aponte</h4>
+      </div>
+   </div>
+ </div>
+     
+     
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1> Dia internacional de la tierra</h1>
+      </div>
+      
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/dia_mundial_de_la_tierra.jpg" alt="dia mundial de la tierra" title="dia mundial de la tierra" id="wows1_0"/></li>
+		<li><img src="data1/images/dia_mundial_de_la_tierra1.jpg" alt="dia mundial de la tierra1" title="dia mundial de la tierra1" id="wows1_1"/></li>
+		<li><img src="data1/images/dia_mundial_de_la_tierra2.jpg" alt="dia mundial de la tierra2" title="dia mundial de la tierra2" id="wows1_2"/></li>
+		<li><img src="data1/images/dia_mundial_de_la_tierra3.jpg" alt="dia mundial de la tierra3" title="dia mundial de la tierra3" id="wows1_3"/></li>
+		<li><img src="data1/images/dia_mundial_de_la_tierra4.jpg" alt="dia mundial de la tierra4" title="dia mundial de la tierra4" id="wows1_4"/></li>
+		<li><img src="data1/images/dia_mundial_de_la_tierra5.jpg" alt="dia mundial de la tierra5" title="dia mundial de la tierra5" id="wows1_5"/></li>
+		<li><img src="data1/images/dia_mundial_de_la_tierra6.jpg" alt="dia mundial de la tierra6" title="dia mundial de la tierra6" id="wows1_6"/></li>
+		<li><img src="data1/images/dia_mundial_de_la_tierra7.jpg" alt="dia mundial de la tierra7" title="dia mundial de la tierra7" id="wows1_7"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/dia_mundial_de_la_tierra8.jpg" alt="bootstrap carousel" title="dia mundial de la tierra8" id="wows1_8"/></a></li>
+		<li><img src="data1/images/dia_mundial_de_la_tierra9.jpg" alt="dia mundial de la tierra9" title="dia mundial de la tierra9" id="wows1_9"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="dia mundial de la tierra"><span><img src="data1/tooltips/dia_mundial_de_la_tierra.jpg" alt="dia mundial de la tierra"/>1</span></a>
+		<a href="#" title="dia mundial de la tierra1"><span><img src="data1/tooltips/dia_mundial_de_la_tierra1.jpg" alt="dia mundial de la tierra1"/>2</span></a>
+		<a href="#" title="dia mundial de la tierra2"><span><img src="data1/tooltips/dia_mundial_de_la_tierra2.jpg" alt="dia mundial de la tierra2"/>3</span></a>
+		<a href="#" title="dia mundial de la tierra3"><span><img src="data1/tooltips/dia_mundial_de_la_tierra3.jpg" alt="dia mundial de la tierra3"/>4</span></a>
+		<a href="#" title="dia mundial de la tierra4"><span><img src="data1/tooltips/dia_mundial_de_la_tierra4.jpg" alt="dia mundial de la tierra4"/>5</span></a>
+		<a href="#" title="dia mundial de la tierra5"><span><img src="data1/tooltips/dia_mundial_de_la_tierra5.jpg" alt="dia mundial de la tierra5"/>6</span></a>
+		<a href="#" title="dia mundial de la tierra6"><span><img src="data1/tooltips/dia_mundial_de_la_tierra6.jpg" alt="dia mundial de la tierra6"/>7</span></a>
+		<a href="#" title="dia mundial de la tierra7"><span><img src="data1/tooltips/dia_mundial_de_la_tierra7.jpg" alt="dia mundial de la tierra7"/>8</span></a>
+		<a href="#" title="dia mundial de la tierra8"><span><img src="data1/tooltips/dia_mundial_de_la_tierra8.jpg" alt="dia mundial de la tierra8"/>9</span></a>
+		<a href="#" title="dia mundial de la tierra9"><span><img src="data1/tooltips/dia_mundial_de_la_tierra9.jpg" alt="dia mundial de la tierra9"/>10</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">wowslider.net</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+<h1>Celebramos el Día Internacional de la Madre Tierra para recordar que el planeta y sus ecosistemas nos dan la vida y el sustento.
+
+Con esta celebración admitimos la responsabilidad colectiva, como nos recordaba la Declaración de Río de 1992, de fomentar la harmonía con la naturaleza y la Madre Tierra para alcanzar el equilibrio justo entre las necesidades económicas, sociales y medioambientales de las generaciones presentes y futuras.
+
+Este día nos brinda la oportunidad de concienciar a todos los habitantes del planeta acerca de los problemas que afectan a la Tierra y a las diferentes formas de vida que en él se desarrollan.
+
+En 2017, la campaña se denomina «Alfabetización medioambiental y climática».
+
+La educación constituye los cimientos del progreso. Necesitamos que la ciudadanía mundial conozca los conceptos sobre el cambio climático y sea consciente de la amenaza sin precedentes para el planeta. El conocimiento nos empoderará a todos y nos llevará a tomar medidas para defender el medio ambiente.
+
+La alfabetización medioambiental y climática no es solo el motor que genera votantes concienciados por las cuestiones ecológicas y promueve legislación en este ámbito, sino que también acelera el desarrollo de tecnologías y empleos respetuosos con el medio ambiente.</h1>
+
+<div data-role="main" class="ui-content" align="center">
+ <div>
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  
+  <a href="http://www.un.org/es/events/motherearthday/"  target="_self" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Ir ala pajina</h2>
+  </a>
+  </li>
+</ul></div></div></div>
+ 
+
+
+      
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Cuidemos el planeta</h4>
+       <h4>Josue Santiago Muñoz Aponte</h4>
+      </div>
+     </div>
+ </div>
+      
+      
+ <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1> Día Internacional de la Biodiversidad</h1>
+      </div>
+      
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/dia_internacional_de_la_biodiversidad.jpg" alt="dia internacional de la biodiversidad" title="dia internacional de la biodiversidad" id="wows2_0"/></li>
+		<li><img src="data2/images/dia_internacional_de_la_biodiversidad1.jpg" alt="dia internacional de la biodiversidad1" title="dia internacional de la biodiversidad1" id="wows2_1"/></li>
+		<li><img src="data2/images/dia_internacional_de_la_biodiversidad2.jpg" alt="dia internacional de la biodiversidad2" title="dia internacional de la biodiversidad2" id="wows2_2"/></li>
+		<li><img src="data2/images/dia_internacional_de_la_biodiversidad3.jpg" alt="dia internacional de la biodiversidad3" title="dia internacional de la biodiversidad3" id="wows2_3"/></li>
+		<li><img src="data2/images/dia_internacional_de_la_biodiversidad4.jpg" alt="dia internacional de la biodiversidad4" title="dia internacional de la biodiversidad4" id="wows2_4"/></li>
+		<li><img src="data2/images/dia_internacional_de_la_biodiversidad5.jpg" alt="dia internacional de la biodiversidad5" title="dia internacional de la biodiversidad5" id="wows2_5"/></li>
+		<li><img src="data2/images/dia_internacional_de_la_biodiversidad6.jpg" alt="dia internacional de la biodiversidad6" title="dia internacional de la biodiversidad6" id="wows2_6"/></li>
+		<li><img src="data2/images/dia_internacional_de_la_biodiversidad7.jpg" alt="dia internacional de la biodiversidad7" title="dia internacional de la biodiversidad7" id="wows2_7"/></li>
+		<li><a href="http://wowslider.com"><img src="data2/images/dia_internacional_de_la_biodiversidad8.jpg" alt="wowslider" title="dia internacional de la biodiversidad8" id="wows2_8"/></a></li>
+		<li><img src="data2/images/dia_internacional_de_la_biodiversidad9.jpg" alt="dia internacional de la biodiversidad9" title="dia internacional de la biodiversidad9" id="wows2_9"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="dia internacional de la biodiversidad"><span><img src="data2/tooltips/dia_internacional_de_la_biodiversidad.jpg" alt="dia internacional de la biodiversidad"/>1</span></a>
+		<a href="#" title="dia internacional de la biodiversidad1"><span><img src="data2/tooltips/dia_internacional_de_la_biodiversidad1.jpg" alt="dia internacional de la biodiversidad1"/>2</span></a>
+		<a href="#" title="dia internacional de la biodiversidad2"><span><img src="data2/tooltips/dia_internacional_de_la_biodiversidad2.jpg" alt="dia internacional de la biodiversidad2"/>3</span></a>
+		<a href="#" title="dia internacional de la biodiversidad3"><span><img src="data2/tooltips/dia_internacional_de_la_biodiversidad3.jpg" alt="dia internacional de la biodiversidad3"/>4</span></a>
+		<a href="#" title="dia internacional de la biodiversidad4"><span><img src="data2/tooltips/dia_internacional_de_la_biodiversidad4.jpg" alt="dia internacional de la biodiversidad4"/>5</span></a>
+		<a href="#" title="dia internacional de la biodiversidad5"><span><img src="data2/tooltips/dia_internacional_de_la_biodiversidad5.jpg" alt="dia internacional de la biodiversidad5"/>6</span></a>
+		<a href="#" title="dia internacional de la biodiversidad6"><span><img src="data2/tooltips/dia_internacional_de_la_biodiversidad6.jpg" alt="dia internacional de la biodiversidad6"/>7</span></a>
+		<a href="#" title="dia internacional de la biodiversidad7"><span><img src="data2/tooltips/dia_internacional_de_la_biodiversidad7.jpg" alt="dia internacional de la biodiversidad7"/>8</span></a>
+		<a href="#" title="dia internacional de la biodiversidad8"><span><img src="data2/tooltips/dia_internacional_de_la_biodiversidad8.jpg" alt="dia internacional de la biodiversidad8"/>9</span></a>
+		<a href="#" title="dia internacional de la biodiversidad9"><span><img src="data2/tooltips/dia_internacional_de_la_biodiversidad9.jpg" alt="dia internacional de la biodiversidad9"/>10</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">wowslider.net</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+      <div data-role="content" align="center">
+       <div>
+        <h2> ¿Qué es la biodiversidad?
+La diversidad biológica, o biodiversidad, es el término por elque se hace referencia a la amplia variedad de seres vivos sobre la Tierra y los patrones naturales que conforma. La diversidad biológica que observamos hoy es el fruto de miles de millones de años de evolución, moldeada por procesos naturales y, cada vez más, por la influencia del ser humano. Esta diversidad forma la red vital de la cual somos parte integrante y de la cual tanto dependemos.
+
+Con frecuencia, se entiende por diversidad la amplia variedad de plantas, animales y microorganismos existentes. Hasta la fecha, se han identificado unos 1,75 millones de especies, en su mayor parte criaturas pequeñas, por ejemplo, insectos. Los científicos reconocen que en realidad hay cerca de 13 millones de especies, si bien las estimaciones varían entre 3 y 100 millones.
+
+La diversidad biológica incluye también las diferencias gen”ticas dentro de cada especie, por ejemplo, entre las variedades de cultivos y las razas de ganado. Los cromosomas, los genes y el ADN, es decir, los componentes vitales, determinan la singularidad de cada individuo y de cada especie.
+
+Otro aspecto adicional de la diversidad biológica es la variedad de ecosistemas, por ejemplo, los que se dan en los desiertos, los bosques, los humedales, las montañas, los lagos, los ríos y paisajes agrícolas. En cada ecosistema, los seres vivos, entre ellos, los seres humanos, forman una comunidad, interactúan entre sí, asi como con el aire, el agua y el suelo que les rodea.
+
+Es esta combinación de formas de vida y sus interacciones mutuas y con el resto del entorno que ha hecho de la Tierra un lugar habitable y único para los seres humanos. La diversidad biológica ofrece un gran número de bienes y servicios que sustentan nuestra vida</h2></div>
+   </div>
+       
+       <div data-role="main" class="ui-content" align="center">
+ <div>
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://www.un.org/es/events/biodiversityday/background.shtml"  target="_self" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Ir ala pajina</h2>
+  </a>
+  </li>
+</ul></div></div></div>
+
+      <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Cuidemos el planeta</h4>
+       <h4>Josue Santiago Muñoz Aponte</h4>
+      </div>
+     </div>
+ </div>
+       
+       
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1> Conciencia ecológica</h1>
+      </div>
+      
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container3">
+<div class="ws_images"><ul>
+		<li><img src="data3/images/conciencia_ecologica.jpg" alt="conciencia ecologica" title="conciencia ecologica" id="wows3_0"/></li>
+		<li><img src="data3/images/conciencia_ecologica1.jpg" alt="conciencia ecologica1" title="conciencia ecologica1" id="wows3_1"/></li>
+		<li><img src="data3/images/conciencia_ecologica2.jpg" alt="conciencia ecologica2" title="conciencia ecologica2" id="wows3_2"/></li>
+		<li><img src="data3/images/conciencia_ecologica3.jpg" alt="conciencia ecologica3" title="conciencia ecologica3" id="wows3_3"/></li>
+		<li><img src="data3/images/conciencia_ecologica4.jpg" alt="conciencia ecologica4" title="conciencia ecologica4" id="wows3_4"/></li>
+		<li><img src="data3/images/conciencia_ecologica5.jpg" alt="conciencia ecologica5" title="conciencia ecologica5" id="wows3_5"/></li>
+		<li><img src="data3/images/conciencia_ecologica6.jpg" alt="conciencia ecologica6" title="conciencia ecologica6" id="wows3_6"/></li>
+		<li><img src="data3/images/conciencia_ecologica7.jpg" alt="conciencia ecologica7" title="conciencia ecologica7" id="wows3_7"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data3/images/conciencia_ecologica8.jpg" alt="bootstrap carousel" title="conciencia ecologica8" id="wows3_8"/></a></li>
+		<li><img src="data3/images/conciencia_ecologica9.jpg" alt="conciencia ecologica9" title="conciencia ecologica9" id="wows3_9"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="conciencia ecologica"><span><img src="data3/tooltips/conciencia_ecologica.jpg" alt="conciencia ecologica"/>1</span></a>
+		<a href="#" title="conciencia ecologica1"><span><img src="data3/tooltips/conciencia_ecologica1.jpg" alt="conciencia ecologica1"/>2</span></a>
+		<a href="#" title="conciencia ecologica2"><span><img src="data3/tooltips/conciencia_ecologica2.jpg" alt="conciencia ecologica2"/>3</span></a>
+		<a href="#" title="conciencia ecologica3"><span><img src="data3/tooltips/conciencia_ecologica3.jpg" alt="conciencia ecologica3"/>4</span></a>
+		<a href="#" title="conciencia ecologica4"><span><img src="data3/tooltips/conciencia_ecologica4.jpg" alt="conciencia ecologica4"/>5</span></a>
+		<a href="#" title="conciencia ecologica5"><span><img src="data3/tooltips/conciencia_ecologica5.jpg" alt="conciencia ecologica5"/>6</span></a>
+		<a href="#" title="conciencia ecologica6"><span><img src="data3/tooltips/conciencia_ecologica6.jpg" alt="conciencia ecologica6"/>7</span></a>
+		<a href="#" title="conciencia ecologica7"><span><img src="data3/tooltips/conciencia_ecologica7.jpg" alt="conciencia ecologica7"/>8</span></a>
+		<a href="#" title="conciencia ecologica8"><span><img src="data3/tooltips/conciencia_ecologica8.jpg" alt="conciencia ecologica8"/>9</span></a>
+		<a href="#" title="conciencia ecologica9"><span><img src="data3/tooltips/conciencia_ecologica9.jpg" alt="conciencia ecologica9"/>10</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">wowslider.net</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine3/wowslider.js"></script>
+<script type="text/javascript" src="engine3/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+      <div data-role="content" align="center">
+       <div>
+        <h2>Qué es la conciencia ecológica. A partir del momento en que el hombre comenzó a apropiarse de la naturaleza para darle forma a sus necesidades y caprichos, los ecosistemas de todo el planeta dieron su respuesta ante este tipo de abusos, a través de consecuencias negativas como la contaminación y la pérdida de biodiversidad..</h2></div>
+   </div>
+       
+        <div data-role="main" class="ui-content" align="center">
+ <div>
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  <a href="https://www.ocio.net/estilo-de-vida/ecologismo/que-es-la-conciencia-ecologica/"  target="_self" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Ir ala pajina</h2>
+  </a>
+  </li>
+</ul></div></div></div>
+
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Cuidemos el planeta</h4>
+       <h4>Josue Santiago Muñoz Aponte</h4>
+      </div>
+     </div>
+ </div>  
+       
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1> Contaminacion</h1>
+      </div>
+      
+
+      <div data-role="content" align="center">
+      
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('conta','','imagenes/tipo de contaminacion2.jpg',1)"><img src="imagenes/tipo de contaminacion.jpg" width="296" height="170" id="conta"></a>
+<div>
+      <h2>Se llama contaminación a la transmisión y difusión de humos o gases tóxicos a medios como la atmósfera y el agua, como también a la presencia de polvos y gérmenes microbianos provenientes de los desechos de la actividad del ser humano.
+En la actualidad, el resultado del desarrollo y progreso tecnológico ha originado diversas formas de contaminación, las cuales alteran el equilibrio físico y mental del ser humano. Debido a esto, la actual contaminación se convierte en un problema más crítico que en épocas pasadas.
+</h2></div>
+   </div>
+       <h1 align="left"> Tipos de contaminacion</h1>
+       
+       
+       <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Contaminación del Agua</h1>
+       <div align="center">
+        <p>Contaminación del agua” es el tipo de contaminación que supone la contaminación distintos cuerpos de agua. Varias criaturas acuáticas dependen de estos cuerpos de agua y sus características naturales nutritivos para apoyar su vida.
+Contaminación del Agua</p>
+        <br>
+       </div>
+       <div align="center">
+         <img src="imagenes/contaminacion del agua.jpg" width="25%" height="15%">
+       </div>
+           <div data-role="main" class="ui-content" align="justify" >
+ <div align="center">
+ <div style="width:40%;" align="center">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b" class="ui-listview ui-group-theme-a" >
+  <li class="ui-first-child ui-last-child">
+  <a href="http://www.monografias.com/trabajos10/contam/contam.shtml"  target="_self" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Ir ala pagina</h2>
+  </a>
+  </li>
+</ul></div></div></div>
+     </div>
+    </div>
+
+       <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Contaminación Acustica</h1>
+       <div align="center">
+        <p>la contaminación acústica es el tipo de contaminación que se produce por diferentes fuentes de audio que está causando la sensación de irritación, distracción para nuestro medio ambiente. Esta contaminación no es no sólo perturbar el medio ambiente sino que también produce daño a nuestra humanidad.</p>
+        <br>
+       </div>
+       <div align="center">
+         <img src="imagenes/contaminacion acustica.jpg" width="25%" height="15%">
+       </div>
+           <div data-role="main" class="ui-content" align="justify">
+ <div align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://www.tiposdecontaminacion.com/2013/01/17/contaminacion-acustica/"  target="_self" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Ir ala pagina</h2>
+  </a>
+  </li>
+</ul></div></div></div>
+     </div>
+    </div>
+    
+    <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Contaminación Lumínica</h1>
+       <div align="center">
+        <p>La Asociación Internacional Cielo Oscuro define la contaminación lumínica a los efectos nocivos de la luz artificial en la atmósfera de la Tierra y el medio ambiente.</p>
+        <br>
+       </div>
+       <div align="center">
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ln','','imagenes/energia luminosa.jpg',1)"><img src="imagenes/luminosa.jpg" width="300" height="149" id="ln"></a> </div>
+           <div data-role="main" class="ui-content" align="justify">
+ <div align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://www.tiposdecontaminacion.com/2013/01/14/contaminacion-luminica/"  target="_self" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Ir ala pagina</h2>
+  </a>
+  </li>
+</ul></div></div></div>
+     </div>
+    </div>
+    
+    
+   <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Contaminación Química</h1>
+       <div align="center">
+        <p>La contaminación es una de las máximas preocupaciones de los gobiernos de los países desarrollados en donde la industrialización ha supuesto un incremento en los niveles de contaminación.</p>
+        <br>
+       </div>
+       <div align="center">
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('quimica','','imagenes/contaminacion quimica2.jpg',1)"><img id="quimica" src="imagenes/contaminacion quimica.jpg"></a> </div>
+           <div data-role="main" class="ui-content" align="justify">
+ <div align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  <a href="https://www.definicionabc.com/salud/contaminacion-quimica.php"  target="_self" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Ir ala pagina</h2>
+  </a>
+  </li>
+</ul></div></div></div>
+     </div>
+   </div>
+    
+    
+   <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Lluvia Ácida</h1>
+       <div align="center">
+        <p>El concepto de lluvia ácida es un concepto relativamente reciente que se acuñó en la segunda mitad del siglo XX para hacer referencia a un tipo de precipitación muy particular que surge a partir de la combinación de las gotas de agua naturales con diferentes gases que se encuentran en la atmósfera a causa de la polución.</p>
+        <br>
+       </div>
+       <div align="center">
+         <img src="imagenes/lluvia acida.png" width="25%" height="15%">
+       </div>
+           <div data-role="main" class="ui-content" align="justify">
+ <div align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  <a href="https://www.definicionabc.com/medio-ambiente/lluvia-acida.php"  target="_self" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Ir ala pagina</h2>
+  </a>
+  </li>
+</ul></div></div></div>
+     </div>
+   </div>
+
+      <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Cuidemos el planeta</h4>
+       <h4>Josue Santiago Muñoz Aponte</h4>
+      </div>
+     </div>
+ </div> 
+       
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1> Cambio Climatico</h1>
+      </div>
+      
+
+     <div align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('cambio','','imagenes/cambio climatico2.jpg',1)"><img src="imagenes/camcio climatico.jpg" width="299" height="169" id="cambio"></a></div>
+     
+<div data-role="content" align="center">
+    <div align="center">
+        <h2>Cambio Climático es un cambio significativo y duradero de los patrones locales o globales del clima, las causas pueden ser naturales, como por ejemplo, variaciones en la energía que se recibe del Sol, erupciones volcánicas, circulación oceánica, procesos biológicos y otros, o puede ser causada por influencia antrópica (por las actividades humanas), como por ejemplo, a través de la emisión de CO2 y otros gases que atrapan calor, o alteración del uso de grandes extensiones de suelos que causan, finalmente, un calentamiento global. Más detalles en ¿Qué es el Cambio Climático? y Causas del Cambio Climático.</h2></div>
+   </div>
+       
+        <div data-role="main" class="ui-content" align="center">
+ <div>
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://cambioclimaticoglobal.com/"  target="_self" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Ir ala pagina</h2>
+  </a>
+  </li>
+</ul></div></div></div>
+
+      <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Cuidemos el planeta</h4>
+       <h4>Josue Santiago Muñoz Aponte</h4>
+      </div>
+     </div>
+ </div> 
+       
+ <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1> Energias</h1>
+      </div>
+     
+<div align="center">
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('energia','','imagenes/energia2.jpg',1)"><img src="imagenes/energia.jpg" width="259" height="194" id="energia"></a>
+   <p>La energía se define como la capacidadde realizar trabajo, de producir movimiento, de generar cambio </p></div>
+
+
+  <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Energía Eléctrica</h1>
+       <div align="center">
+        <p>La energia electrica es la energia resultante de una diferencia de potencial entre dos puntos y que permite establar una corriente electrica entre los dos, para obtener algun tipo de trabajo, también puede trasformarse en otros tipos de energía entre las que se encuentran energía luminosa o luz, la energía mecánica y la energía térmica.</p>
+        <br>
+       </div>
+       <div align="center">
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('electrica','','imagenes/energia electrica2.jpg',1)"><img src="imagenes/energia electrica.jpg" width="300" height="180" id="electrica"></a> </div>
+           <div data-role="main" class="ui-content" align="justify">
+ <div align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://tiposdeenergia.info/tipos-de-energia/"  target="_self" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Ir ala pagina</h2>
+  </a>
+  </li>
+</ul></div></div></div>
+     </div>
+   </div>
+   
+   
+   <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Energía lumínica</h1>
+       <div align="center">
+        <p>La energía luminosa es la fracción que se percibe de la energía que trasporta la luz y que se puede manifestar sobre la materia de diferentes maneras tales como arrancar los electrones de los metales, comportarse como una onda o como si fuera materia, aunque la mas normal es que se desplace como una onda e interactúe con la materia de forma material o física, también añadimos que esta no debe confundirse con la energía radiante.</p>
+        <br>
+       </div>
+       <div align="center">
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('luminosa','','imagenes/energia luminosa2.jpg',1)"><img src="imagenes/energia luminosa.jpg" width="300" height="270" id="luminosa"></a> </div>
+           <div data-role="main" class="ui-content" align="justify">
+ <div align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://tiposdeenergia.info/tipos-de-energia/"  target="_self" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Ir ala pagina</h2>
+  </a>
+  </li>
+</ul></div></div></div>
+     </div>
+   </div>
+   
+   
+   <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Energía mecánica</h1>
+       <div align="center">
+        <p>La energía mecánica se debe a la posición y movimiento de un cuerpo y es la suma de la energía potencial, cinética y energía elástica de un cuerpo en movimiento. Refleja la capacidad que tienen los cuerpos con masa de hacer un trabajo. Algunos ejemplos de energía mecánica los podríamos encontrar en la energía hidráulica, eólica y mareomotriz</p>
+        <br>
+       </div>
+       <div align="center">
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('mecanica','','imagenes/energia mecanica2.jpg',1)"><img src="imagenes/energia mecanica.jpg" width="300" height="290" id="mecanica"></a></div>
+           <div data-role="main" class="ui-content" align="justify">
+ <div align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://tiposdeenergia.info/tipos-de-energia/"  target="_self" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Ir ala pagina</h2>
+  </a>
+  </li>
+</ul></div></div></div>
+     </div>
+   </div>
+   
+   
+   <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Energía térmica</h1>
+       <div align="center">
+        <p>La energía térmica es la fuerza que se libera en forma de calor, puede obtenerse mediante la naturaleza y también del sol mediante una reacción exotérmica como podría ser la combustión de los combustibles, reacciones nucleares de fusión o fisión, mediante la energía eléctrica por el efecto denominado Joule o por ultimo como residuo de otros procesos químicos o mecánicos. También es posible aprovechar energía de la naturaleza  que se encuentra en forma de energía térmica calorifica, como la energía geotérmica o la energía solar fotovoltaica.</p>
+        <br>
+       </div>
+       <div align="center">
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('termica','','imagenes/energia termica2.jpg',1)"><img src="imagenes/energia termica.jpg" width="300" height="231" id="termica"></a></div>
+           <div data-role="main" class="ui-content" align="justify">
+ <div align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://tiposdeenergia.info/tipos-de-energia/"  target="_self" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Ir ala pagina</h2>
+  </a>
+  </li>
+</ul></div></div></div>
+     </div>
+   </div>
+   
+   
+   <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Energía Eólica </h1>
+       <div align="center">
+        <p>La energía eólica se caracteriza por se una energía abundante, renovable y limpia, también ayuda a disminuir las emisiones de gases contaminantes y de efecto invernadero  al reemplazar termoeléctricas a base de combustibles fósiles, lo que la convierte en un tipo de energía verde, el mayor inconveniente de esta seria la intermitencia del viento que podría suponer en algunas ocasiones un problema si se utilizara a gran escala</p>
+        <br>
+       </div>
+       <div align="center">
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('eolica','','imagenes/energia eolica2.jpg',1)"><img src="imagenes/energia eolica.jpg" width="254" height="199" id="eolica"></a></div>
+           <div data-role="main" class="ui-content" align="justify">
+ <div align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://tiposdeenergia.info/tipos-de-energia/"  target="_self" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Ir ala pagina</h2>
+  </a>
+  </li>
+</ul></div></div></div>
+     </div>
+   </div>
+   
+   
+   
+ </div>
+
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Cuidemos el planeta</h4>
+       <h4>Josue Santiago Muñoz Aponte</h4>
+      </div>
+ </div> 
+       
+ <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1> Calentamiento global</h1>
+      </div>
+      
+
+      <div data-role="content" align="center">
+      
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('calen','','imagenes/conciencia ecologica4.jpg',1)"><img src="imagenes/cambio climatico2.jpg" width="289" height="174" id="calen"></a>
+      
+<div>
+      <p>Los glaciares se están derritiendo, el nivel del mar aumenta, las selvas se están secando y la fauna y la flora lucha para seguir este ritmo. Cada vez es más evidente que los humanos han causado la mayor parte del calentamiento del siglo pasado, mediante la emisión de gases que retienen el calor, para potenciar nuestra vida moderna. Llamamos gases de invernadero y sus niveles son cada vez más altos, ahora y en los últimos 65.000 años. </p></div>
+   </div>
+       
+        <div data-role="main" class="ui-content" align="center">
+ <div>
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://www.nationalgeographic.es/medio-ambiente/que-es-el-calentamiento-global"  target="_self" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Ir ala pagina</h2>
+  </a>
+  </li>
+</ul></div></div></div>
+
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Cuidemos el planeta</h4>
+       <h4>Josue Santiago Muñoz Aponte</h4>
+      </div>
+     </div>
+ </div> 
+       
+ <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1> Creado por</h1>
+      </div>
+      
+    
+
+      <div data-role="content" align="center">
+       <div>
+        <h2> Nombre</h2>
+        Josue Santiago Muñoz Aponte<br>
+        <h2> Grado y Grupo</h2>
+        4°"E"<br>
+        <h2> Especialidad</h2>
+        Programacion<br>
+        <h2> Submodulo</h2>
+        Desarrollo de aplicaciones Moviles (DAM)<br>
+        <h2> Docente</h2>
+         Jose Antonio Gomez Hernandez
+        </div>
+   </div>
+   
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Cuidemos el planeta</h4>
+       <h4>Josue Santiago Muñoz Aponte</h4>
+      </div>
+     </div>
+ </div>  
+ </div>
+       
+       
+       
+</body>
+</html>
+
